@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Shipping From Indonesia | Express GoSend Price Checker</title>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand">
+      <div>
+        <h1>Shipping From Indonesia</h1>
+        <div class="tagline">Shop Ship Everywhere</div>
+        <p class="lead">Express GoSend 2026 Rate Calculator</p>
+      </div>
+    </div>
+    <div class="chip" id="routeChip">Surabaya → Afghanistan (AF)</div>
+  </header>
+
+  <main class="grid">
+    <section class="card">
+      <h2>Rate Calculator</h2>
+      <p class="small">
+        Select your destination country, actual weight, and dimensions. The system maps the destination zone automatically and figures the optimal weight pricing strategy.
+      </p>
+
+      <div class="row">
+        <div class="col">
+          <label>Origin</label>
+          <select id="from">
+            <option value="surabaya" selected>Surabaya, Indonesia (SUB)</option>
+            <option value="jakarta">Jakarta, Indonesia (JKT)</option>
+            <option value="semarang">Semarang, Indonesia (SMG)</option>
+          </select>
+        </div>
+        <div class="col">
+          <label>Destination Country</label>
+          <select id="to"></select>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top:10px">
+        <div class="col">
+          <label>Actual Weight (kg)</label>
+          <input id="weight" type="number" min="0.5" step="0.5" value="5">
+        </div>
+        <div class="col">
+          <label>Service Level</label>
+          <select id="service">
+            <option value="standard" selected>Standard Service</option>
+            <option value="express">Express Premium Service (+40%)</option>
+          </select>
+        </div>
+      </div>
+
+      <h3 style="font-size: 14px; margin-top: 15px; margin-bottom: 5px;">Package Dimensions (Optional - For Volumetric Checks)</h3>
+      <div class="row">
+        <div class="col">
+          <label>Length (cm)</label>
+          <input id="length" type="number" min="0" placeholder="0">
+        </div>
+        <div class="col">
+          <label>Width (cm)</label>
+          <input id="width" type="number" min="0" placeholder="0">
+        </div>
+        <div class="col">
+          <label>Height (cm)</label>
+          <input id="height" type="number" min="0" placeholder="0">
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 15px;">
+        <div class="col" style="flex-direction: row; align-items: center; gap: 10px;">
+          <input id="remoteAreaCheck" type="checkbox" style="width: 20px; height: 20px;">
+          <label for="remoteAreaCheck" style="margin-bottom: 0; cursor: pointer;">Apply Remote Area Delivery Surcharge (+Rp 450.000)</label>
+        </div>
+      </div>
+
+      <div class="row controls" style="margin-top:25px">
+        <button id="estimateBtn" style="flex: 2;">Calculate Price</button>
+        <button id="reset" class="secondary" style="flex: 1;">Reset</button>
+      </div>
+    </section>
+
+    <aside>
+      <div class="card">
+        <h3>Price Result</h3>
+        <div class="estimate" id="estimateArea">
+          <div class="breakdown" id="breakdown">
+            <div class="line">
+              <div class="muted">Destination Classification</div>
+              <div id="zoneClassificationVal">Zone 8</div>
+            </div>
+            <div class="line">
+              <div class="muted">Chargeable Weight Base</div>
+              <div id="chargeableWeightVal">5 kg</div>
+            </div>
+            <div class="line">
+              <div class="muted">Base Freight Cost</div>
+              <div id="freightVal">-</div>
+            </div>
+            <div class="line">
+              <div class="muted">Additional Surcharges</div>
+              <div id="surchargeVal">-</div>
+            </div>
+            <div class="line total">
+              <div>Total Freight Price</div>
+              <div id="totalVal">-</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="info-box" id="countryNotesBox">
+        <strong id="notesTitle" style="color: #1e293b; font-size: 14px;">Operational Conditions:</strong>
+        <ul id="notesList">
+          <li>Rates are calculated up to 30 KG maximum baseline limit. Heavy cargo tiers exceeding 30 KG are subject to special over-weight handling procedures.</li>
+          <li>Volumetric weight logic formula uses: $\text{Length} \times \text{Width} \times \text{Height} / 5000$.</li>
+          <li>Final value excludes destination local custom duties, taxes, or clearance handling if charged by country authorities.</li>
+        </ul>
+      </div>
+    </aside>
+  </main>
+
+  <footer class="footer">
+    © 2026 PT Surabaya Shipping & Logistics. All Rights Reserved.
+  </footer>
+</div>
+</body>
+</html>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
