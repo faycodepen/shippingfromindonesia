@@ -1,20 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-  <head>
-    <meta charset="UTF-8">
-    <title>Untitled</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
-    
-  <body>
-  <!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Shipping From Indonesia | Express GoSend Price Checker</title>
+  <title>Shipping From Indonesia | GoSend Price Checker</title>
 </head>
 <body>
 <div class="app">
@@ -23,17 +12,17 @@
       <div>
         <h1>Shipping From Indonesia</h1>
         <div class="tagline">Shop Ship Everywhere</div>
-        <p class="lead">Express GoSend 2026 Rate Calculator</p>
+        <p class="lead">GoSend 2026 Rate Calculator (Asia & Europe)</p>
       </div>
     </div>
-    <div class="chip" id="routeChip">Surabaya → Afghanistan (AF)</div>
+    <div class="chip" id="routeChip">Surabaya → Australia</div>
   </header>
 
   <main class="grid">
     <section class="card">
       <h2>Rate Calculator</h2>
       <p class="small">
-        Select your destination country, actual weight, and dimensions. The system maps the destination zone automatically and figures the optimal weight pricing strategy.
+        Select your destination country, actual weight, and package dimensions. The calculator uses direct country-specific and Europe zonal tariffs.
       </p>
 
       <div class="row">
@@ -46,7 +35,7 @@
           </select>
         </div>
         <div class="col">
-          <label>Destination Country</label>
+          <label>Destination Country / Region</label>
           <select id="to"></select>
         </div>
       </div>
@@ -54,14 +43,7 @@
       <div class="row" style="margin-top:10px">
         <div class="col">
           <label>Actual Weight (kg)</label>
-          <input id="weight" type="number" min="0.5" step="0.5" value="5">
-        </div>
-        <div class="col">
-          <label>Service Level</label>
-          <select id="service">
-            <option value="standard" selected>Standard Service</option>
-            <option value="express">Express Premium Service (+40%)</option>
-          </select>
+          <input id="weight" type="number" min="1" step="1" value="5">
         </div>
       </div>
 
@@ -101,7 +83,7 @@
           <div class="breakdown" id="breakdown">
             <div class="line">
               <div class="muted">Destination Classification</div>
-              <div id="zoneClassificationVal">Zone 8</div>
+              <div id="zoneClassificationVal">Direct Country Tariff</div>
             </div>
             <div class="line">
               <div class="muted">Chargeable Weight Base</div>
@@ -126,9 +108,9 @@
       <div class="info-box" id="countryNotesBox">
         <strong id="notesTitle" style="color: #1e293b; font-size: 14px;">Operational Conditions:</strong>
         <ul id="notesList">
-          <li>Rates are calculated up to 30 KG maximum baseline limit. Heavy cargo tiers exceeding 30 KG are subject to special over-weight handling procedures.</li>
-          <li>Volumetric weight logic formula uses: $\text{Length} \times \text{Width} \times \text{Height} / 5000$.</li>
-          <li>Final value excludes destination local custom duties, taxes, or clearance handling if charged by country authorities.</li>
+          <li>Rates are calculated per 1 KG integer step up to 30 KG maximum baseline limit.</li>
+          <li>Volumetric weight formula: $\text{Length} \times \text{Width} \times \text{Height} / 5000$.</li>
+          <li>Excludes local custom duties, taxes, or clearance fees at destination.</li>
         </ul>
       </div>
     </aside>
@@ -139,9 +121,4 @@
   </footer>
 </div>
 </body>
-</html>
-    <script  src="./script.js"></script>
-
-  </body>
-  
 </html>
