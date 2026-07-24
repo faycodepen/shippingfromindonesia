@@ -20,10 +20,10 @@ body {
 }
 
 /* ==========================================
-   2. HEADER & BRANDING (Orange & Dark Slate)
+   2. HEADER & BRANDING
    ========================================== */
 header { 
-  background: #1e293b; /* Dark Slate Grey */
+  background: #1e293b; 
   color: white; 
   padding: 20px; 
   border-radius: 8px; 
@@ -31,7 +31,7 @@ header {
   display: flex; 
   justify-content: space-between; 
   align-items: center; 
-  border-bottom: 4px solid #ea580c; /* Orange Accent Line Line */
+  border-bottom: 4px solid #ea580c; 
 }
 
 .brand h1 { 
@@ -51,7 +51,7 @@ header {
 }
 
 .chip { 
-  background: #ea580c; /* Vivid Orange */
+  background: #ea580c; 
   color: white;
   padding: 6px 14px; 
   border-radius: 20px; 
@@ -125,15 +125,15 @@ select, input {
 }
 
 select:focus, input:focus {
-  border-color: #ea580c; /* Orange glow on focus */
+  border-color: #ea580c; 
 }
 
 /* ==========================================
-   5. BUTTONS (Orange Interaction)
+   5. BUTTONS
    ========================================== */
 button { 
   padding: 12px 20px; 
-  background: #ea580c; /* Primary Orange */
+  background: #ea580c; 
   color: white; 
   border: none; 
   border-radius: 6px; 
@@ -143,7 +143,7 @@ button {
 }
 
 button:hover { 
-  background: #c2410c; /* Deeper Dark Orange */
+  background: #c2410c; 
 }
 
 button.secondary { 
@@ -172,12 +172,12 @@ button.secondary:hover {
 }
 
 .breakdown .total { 
-  border-top: 2px solid #ea580c; /* Crisp Orange top border */
+  border-top: 2px solid #ea580c; 
   font-weight: bold; 
   font-size: 18px; 
   margin-top: 15px; 
   border-bottom: none; 
-  color: #ea580c; /* Bold Orange Total Text */
+  color: #ea580c; 
   padding-top: 10px; 
 }
 
@@ -189,8 +189,8 @@ button.secondary:hover {
    7. SIDEBAR INFO & FOOTER
    ========================================== */
 .info-box { 
-  background: #fff7ed; /* Light Amber/Orange Tint Tint */
-  border-left: 4px solid #ea580c; /* Orange Border Accent */
+  background: #fff7ed; 
+  border-left: 4px solid #ea580c; 
   padding: 15px; 
   border-radius: 4px; 
   font-size: 13px; 
